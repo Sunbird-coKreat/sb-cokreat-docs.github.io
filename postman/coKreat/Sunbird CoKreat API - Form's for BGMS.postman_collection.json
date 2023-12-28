@@ -1,0 +1,1000 @@
+{
+	"info": {
+		"_postman_id": "12320192-abe5-44d6-9f46-12d9a9f85002",
+		"name": "Sunbird CoKreat API - Form's for BGMS",
+		"description": "This collection have all the form API's for new Domain configuration for framework catefories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26545541"
+	},
+	"item": [
+		{
+			"name": "Workspace",
+			"item": [
+				{
+					"name": "Workspace Category Read",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkOTY3NzRjYzJkNWU0ZWUxYmQwNzQ4Y2RiOWQ2Mzg0OSJ9.n4hXxKxl_698yeZPSWhXeGvMOb4esfgPadIZe8jZ0Z4",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-authenticated-user-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1WXhXdE4tZzRfMld5MG5PS1ZoaE5hU0gtM2lSSjdXU25ibFlwVVU0TFRrIn0.eyJqdGkiOiIwNzk3NDcxZS04ZmYwLTQ5NjctYjNlYy03MWMwY2ZjYmMzMDIiLCJleHAiOjE1NzUzNzgzMTEsIm5iZiI6MCwiaWF0IjoxNTc1MzYzOTExLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJhZG1pbi1jbGkiLCJzdWIiOiJmOjVhOGEzZjJiLTM0MDktNDJlMC05MDAxLWY5MTNiYzBmZGUzMTo5NWU0OTQyZC1jYmU4LTQ3N2QtYWViZC1hZDhlNmRlNGJmYzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJjN2NkMmRmMi0zMGJhLTRjNjUtYWNhNi1jMmJkMGMxYzI5NWYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnt9LCJuYW1lIjoiUmV2aWV3ZXIgVXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6Im50cHRlc3QxMDMiLCJnaXZlbl9uYW1lIjoiUmV2aWV3ZXIiLCJmYW1pbHlfbmFtZSI6IlVzZXIiLCJlbWFpbCI6InVzKioqKioqKipAdGVzdHNzLmNvbSJ9.MP0ufWdddyvYXw_HZRzGmZX-ClzUOfXeMcZW-558XO5Z4xCsDWsLGGYKDpCqhqgNBLPYgs7oiPf0rbhenSgsLSq7M5ZZ30elSrGl3zHvUh8E-bVsbDHzUwhx95czEd3kGaIBTIjQ1o9BmF54CKdwtIuxA-447dJsHtXlFaVATNI_yS-bQSBjKm86HaDF58-zKeaTZ__-Wi8E3vChBBIujsNNIokNv2LxkdlLvSKXo8XVNuIj94H_yryTUpfAfX60qALsqF7Yk8sWq8lEud72B_hJcPzqFwbT0a_gThRGctnPk-yJWN6a6oY4yUonLtUjTJROCyYILCwAz9bItp6NRw",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AaudonhNhHwoZ2VTzA4ownKoyGdlI1zQ3.2%2FYaQyGHfWSwB%2Bf0t5u9xOQFO1sHb0kpW5T7u2rqnpE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\",\n        \"rootOrgId\": \"0138934136407244800\" // Channel id\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/data/v1/form/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"data",
+								"v1",
+								"form",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Workspace Category Show/ Hide Update API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkOTY3NzRjYzJkNWU0ZWUxYmQwNzQ4Y2RiOWQ2Mzg0OSJ9.n4hXxKxl_698yeZPSWhXeGvMOb4esfgPadIZe8jZ0Z4",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-authenticated-user-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1WXhXdE4tZzRfMld5MG5PS1ZoaE5hU0gtM2lSSjdXU25ibFlwVVU0TFRrIn0.eyJqdGkiOiIwNzk3NDcxZS04ZmYwLTQ5NjctYjNlYy03MWMwY2ZjYmMzMDIiLCJleHAiOjE1NzUzNzgzMTEsIm5iZiI6MCwiaWF0IjoxNTc1MzYzOTExLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJhZG1pbi1jbGkiLCJzdWIiOiJmOjVhOGEzZjJiLTM0MDktNDJlMC05MDAxLWY5MTNiYzBmZGUzMTo5NWU0OTQyZC1jYmU4LTQ3N2QtYWViZC1hZDhlNmRlNGJmYzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJjN2NkMmRmMi0zMGJhLTRjNjUtYWNhNi1jMmJkMGMxYzI5NWYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnt9LCJuYW1lIjoiUmV2aWV3ZXIgVXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6Im50cHRlc3QxMDMiLCJnaXZlbl9uYW1lIjoiUmV2aWV3ZXIiLCJmYW1pbHlfbmFtZSI6IlVzZXIiLCJlbWFpbCI6InVzKioqKioqKipAdGVzdHNzLmNvbSJ9.MP0ufWdddyvYXw_HZRzGmZX-ClzUOfXeMcZW-558XO5Z4xCsDWsLGGYKDpCqhqgNBLPYgs7oiPf0rbhenSgsLSq7M5ZZ30elSrGl3zHvUh8E-bVsbDHzUwhx95czEd3kGaIBTIjQ1o9BmF54CKdwtIuxA-447dJsHtXlFaVATNI_yS-bQSBjKm86HaDF58-zKeaTZ__-Wi8E3vChBBIujsNNIokNv2LxkdlLvSKXo8XVNuIj94H_yryTUpfAfX60qALsqF7Yk8sWq8lEud72B_hJcPzqFwbT0a_gThRGctnPk-yJWN6a6oY4yUonLtUjTJROCyYILCwAz9bItp6NRw",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AaudonhNhHwoZ2VTzA4ownKoyGdlI1zQ3.2%2FYaQyGHfWSwB%2Bf0t5u9xOQFO1sHb0kpW5T7u2rqnpE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\",\n        \"rootOrgId\": \"\", // Channel ID\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"display\",\n            \"fields\": [\n                {\n                    \"code\": \"book\",\n                    \"name\": \"Book\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"course\",\n                    \"name\": \"Course\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"resource\",\n                    \"name\": \"Resource\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"collection\",\n                    \"name\": \"Collection\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"lessonPlan\",\n                    \"name\": \"Lesson Plan\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"contentupload\",\n                    \"name\": \"Upload Content\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"contentuploadlarge\",\n                    \"name\": \"Upload Large Videos(>50MB)\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"assessment\",\n                    \"name\": \"Cource Assesment\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"questionsets\",\n                    \"name\": \"Questionsets\",\n                    \"visible\": true\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/data/v1/form/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"data",
+								"v1",
+								"form",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "These API's are to enable and disbale the primary category tiles in workspace, In case you have to show or hide any categories the \"visible\" key needs to be updated."
+		},
+		{
+			"name": "coKreat Form API for Framework Categories",
+			"item": [
+				{
+					"name": "FORM Read Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3A_jHfa-gCjdk6eODS_7s4X_TEAy7GALEs.%2FEhXkBp%2FHcZH2NagAZa%2FBZn7F%2BJYEUVcMYxTHUtjQ2o"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Channel ID\n        \"operation\": \"read\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/data/v1/form/read",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"data",
+								"v1",
+								"form",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Form Read API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AowszM-TaXNy-LJ9xQ-DkWkwAvG5eUMif.yLt5LDRBkgj0I2RSJeU2DIIgtrd9rJXkU6lo2rjKvAY",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "https://dock.sunbirded.org",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://dock.sunbirded.org/sourcing/edit/1665cbe0-9e26-11ee-9368-cb843a7f6811",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "dev.dock.portal",
+								"type": "text"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "44772849-88b4-4bb1-b20b-e658ee5befc8",
+								"type": "text"
+							},
+							{
+								"key": "X-Source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "X-msgid",
+								"value": "3a320c0c-b1ab-4aac-9d18-f11edde12013",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\"",
+								"type": "text"
+							},
+							{
+								"key": "ts",
+								"value": "2023-12-19T13:44:02+05:30",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Channel ID\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://dock.sunbirded.org/content/program/v1/form/update",
+							"protocol": "https",
+							"host": [
+								"dock",
+								"sunbirded",
+								"org"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Form Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AowszM-TaXNy-LJ9xQ-DkWkwAvG5eUMif.yLt5LDRBkgj0I2RSJeU2DIIgtrd9rJXkU6lo2rjKvAY",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "https://dock.sunbirded.org",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://dock.sunbirded.org/sourcing/edit/1665cbe0-9e26-11ee-9368-cb843a7f6811",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "dev.dock.portal",
+								"type": "text"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "44772849-88b4-4bb1-b20b-e658ee5befc8",
+								"type": "text"
+							},
+							{
+								"key": "X-Source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "X-msgid",
+								"value": "3a320c0c-b1ab-4aac-9d18-f11edde12013",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\"",
+								"type": "text"
+							},
+							{
+								"key": "ts",
+								"value": "2023-12-19T13:44:02+05:30",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Form ̈Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9",
+								"type": "text"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AowszM-TaXNy-LJ9xQ-DkWkwAvG5eUMif.yLt5LDRBkgj0I2RSJeU2DIIgtrd9rJXkU6lo2rjKvAY",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "https://dock.sunbirded.org",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "https://dock.sunbirded.org/sourcing/edit/1665cbe0-9e26-11ee-9368-cb843a7f6811",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors",
+								"type": "text"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+								"type": "text"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "dev.dock.portal",
+								"type": "text"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800",
+								"type": "text"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "44772849-88b4-4bb1-b20b-e658ee5befc8",
+								"type": "text"
+							},
+							{
+								"key": "X-Source",
+								"value": "web",
+								"type": "text"
+							},
+							{
+								"key": "X-msgid",
+								"value": "3a320c0c-b1ab-4aac-9d18-f11edde12013",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0",
+								"type": "text"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\"",
+								"type": "text"
+							},
+							{
+								"key": "ts",
+								"value": "2023-12-19T13:44:02+05:30",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Form Create for Primary Category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AHL83EjPDNo0jAXwgABl36xVla4AVkoxZ.nUN0T%2Bj%2BLSvG2iL99igbdye2f%2FPD8nVZ4DbR1IVAL%2B8"
+							},
+							{
+								"key": "Origin",
+								"value": "https://dock.sunbirded.org"
+							},
+							{
+								"key": "Referer",
+								"value": "https://dock.sunbirded.org/sourcing/edit/14f4a400-9fb8-11ee-8a78-cdc6173471b2"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "dev.dock.portal"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "518a7ef1-17af-40e2-9bcc-9ae08441bc58"
+							},
+							{
+								"key": "X-Source",
+								"value": "web"
+							},
+							{
+								"key": "X-msgid",
+								"value": "61a80d7c-6215-4a23-9be6-dbbbb687cb2e"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "ts",
+								"value": "2023-12-21T17:25:17+05:30"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"0138934136407244800\",\n        \"primarycategory\":\"Digital Textbook\",\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "in this collection we have form read, create and update API's\n\nWe need to Have these API's to show the categories in the SB forms and other places.\n\nRead API:\n\n``` json\n{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\", \n        \"rootOrgId\": \"0138934136407244800\" // Channel id\n    }\n}\n\n ```\n\nWe need to pass the root ord id (channel id) to get the category objects\n\nCreate / Update API:\n\nIn this we add properties and all the other validation similar as we add for SB forms\n\n``` json\n{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n]\n}\n}\n}\n\n ```"
+		},
+		{
+			"name": "coKreat Filter Form API",
+			"item": [
+				{
+					"name": "Filter Read",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AvdPL9Dc8JFr0FXMj_Gd7bAeb4lGrtINa.YBEqMFFpBoSRNAecrfEcOcVn2y7S38KOI%2FsnHcGiywE"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/sourcing/edit/16d39ea0-6bee-11ee-be50-8fc759e28c3c"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "local.sunbird.portal"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "dc0ea6fc-aa1e-4da6-9670-020b76cfa3d6"
+							},
+							{
+								"key": "X-Source",
+								"value": "web"
+							},
+							{
+								"key": "X-msgid",
+								"value": "ef49b661-155e-4df5-975e-e5ed82a01ab5"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "ts",
+								"value": "2023-11-10T09:44:12+05:30"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"context\": \"framework\",\n        \"context_type\": \"filters\",\n        \"channel\": \"\", // Channel ID\n        \"operation\": \"create\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/read",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3Ahsw0yeQX2AQYjNAqkmgs5BxDPXh8n1RW.CjpLNTDAk6uORMesim4AeJzdBqziwgfZ3HSr%2Fg0%2BcX0"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/sourcing/edit/16d39ea0-6bee-11ee-be50-8fc759e28c3c"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "local.sunbird.portal"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "dc0ea6fc-aa1e-4da6-9670-020b76cfa3d6"
+							},
+							{
+								"key": "X-Source",
+								"value": "web"
+							},
+							{
+								"key": "X-msgid",
+								"value": "ef49b661-155e-4df5-975e-e5ed82a01ab5"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "ts",
+								"value": "2023-11-10T09:44:12+05:30"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"create\",\n        \"context\": \"framework\",\n        \"context_type\": \"filters\",\n        \"channel\": \"0138934136407244800\",\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"contentTypes\",\n                    \"name\": \"Content Types\",\n                    \"label\": \"Content Types\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Content Types\",\n                    \"placeholder\": \"Select Content Types\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contentTypes\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Content Types\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"contributions\",\n                    \"name\": \"Contributions\",\n                    \"label\": \"Contributions\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Contributions\",\n                    \"placeholder\": \"Select Contributions\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"closed\",\n                            \"translations\": null,\n                            \"name\": \"Closed\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"any\",\n                            \"translations\": null,\n                            \"name\": \"Any\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"nominations\",\n                    \"name\": \"Nominations\",\n                    \"label\": \"Nominations\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Nominations\",\n                    \"placeholder\": \"Select Nominations\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"closed\",\n                            \"translations\": null,\n                            \"name\": \"Closed\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"any\",\n                            \"translations\": null,\n                            \"name\": \"Any\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"rootorg_id\",\n                    \"name\": \"Rootorg Id\",\n                    \"label\": \"Rootorg Id\",\n                    \"default\": \"\",\n                    \"visible\": false,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Rootorg Id\",\n                    \"placeholder\": \"Select Rootorg Id\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"target_collection_category\",\n                    \"name\": \"Target Collection Category\",\n                    \"label\": \"Target Collection Category\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Target Collection Category\",\n                    \"placeholder\": \"Select Target Collection Category\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Content Playlist\",\n                            \"translations\": null,\n                            \"name\": \"Content Playlist\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Course\",\n                            \"translations\": null,\n                            \"name\": \"Course\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Digital Textbook\",\n                            \"translations\": null,\n                            \"name\": \"Digital Textbook\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Question paper\",\n                            \"translations\": null,\n                            \"name\": \"Question paper\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter ̈Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3Ahsw0yeQX2AQYjNAqkmgs5BxDPXh8n1RW.CjpLNTDAk6uORMesim4AeJzdBqziwgfZ3HSr%2Fg0%2BcX0"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/sourcing/edit/16d39ea0-6bee-11ee-be50-8fc759e28c3c"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "X-App-Id",
+								"value": "local.sunbird.portal"
+							},
+							{
+								"key": "X-Channel-Id",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Org-code",
+								"value": "0138934136407244800"
+							},
+							{
+								"key": "X-Request-ID",
+								"value": "dc0ea6fc-aa1e-4da6-9670-020b76cfa3d6"
+							},
+							{
+								"key": "X-Source",
+								"value": "web"
+							},
+							{
+								"key": "X-msgid",
+								"value": "ef49b661-155e-4df5-975e-e5ed82a01ab5"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "ts",
+								"value": "2023-11-10T09:44:12+05:30"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"create\",\n        \"context\": \"framework\",\n        \"context_type\": \"filters\",\n        \"channel\": \"0138934136407244800\",\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"contentTypes\",\n                    \"name\": \"Content Types\",\n                    \"label\": \"Content Types\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Content Types\",\n                    \"placeholder\": \"Select Content Types\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contentTypes\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Content Types\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"contributions\",\n                    \"name\": \"Contributions\",\n                    \"label\": \"Contributions\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Contributions\",\n                    \"placeholder\": \"Select Contributions\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"closed\",\n                            \"translations\": null,\n                            \"name\": \"Closed\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_contributions\",\n                            \"code\": \"any\",\n                            \"translations\": null,\n                            \"name\": \"Any\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"contributions\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Contributions\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"nominations\",\n                    \"name\": \"Nominations\",\n                    \"label\": \"Nominations\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Nominations\",\n                    \"placeholder\": \"Select Nominations\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"open\",\n                            \"translations\": null,\n                            \"name\": \"open\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"closed\",\n                            \"translations\": null,\n                            \"name\": \"Closed\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_nominations\",\n                            \"code\": \"any\",\n                            \"translations\": null,\n                            \"name\": \"Any\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"nominations\",\n                            \"status\": \"Live\",\n                            \"lable\": \"nominations\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"rootorg_id\",\n                    \"name\": \"Rootorg Id\",\n                    \"label\": \"Rootorg Id\",\n                    \"default\": \"\",\n                    \"visible\": false,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Rootorg Id\",\n                    \"placeholder\": \"Select Rootorg Id\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"target_collection_category\",\n                    \"name\": \"Target Collection Category\",\n                    \"label\": \"Target Collection Category\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"Target Collection Category\",\n                    \"placeholder\": \"Select Target Collection Category\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    },\n                    \"terms\": [\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Content Playlist\",\n                            \"translations\": null,\n                            \"name\": \"Content Playlist\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Course\",\n                            \"translations\": null,\n                            \"name\": \"Course\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Digital Textbook\",\n                            \"translations\": null,\n                            \"name\": \"Digital Textbook\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        },\n                        {\n                            \"associations\": [],\n                            \"identifier\": \"agriculture_frameeork_select_content_type\",\n                            \"code\": \"Question paper\",\n                            \"translations\": null,\n                            \"name\": \"Question paper\",\n                            \"description\": null,\n                            \"index\": 1,\n                            \"category\": \"target_collection_category\",\n                            \"status\": \"Live\",\n                            \"lable\": \"Target Collection Category\"\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{host}}/content/program/v1/form/update",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"content",
+								"program",
+								"v1",
+								"form",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
