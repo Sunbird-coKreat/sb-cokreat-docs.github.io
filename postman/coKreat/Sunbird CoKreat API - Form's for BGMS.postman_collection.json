@@ -113,45 +113,11 @@
 					"response": []
 				}
 			],
-			"description": "These API's are to enable and disbale the primary category tiles in workspace, In case you have to show or hide any categories the \"visible\" key needs to be updated."
+			"description": "These API's are to enable and disbale the primary category tiles in workspace, In case you have to show or hide any categories the \"visible\" key needs to be updated.\n\n``` json\n{\n   \"code\": \"book\",\n   \"name\": \"Book\",\n   \"visible\": true\n},\n\n ```\n\nSupposw you need to show the Book Lable, then you need to make \"visible\" as true and to hide it we need to mark \"visible\" as false."
 		},
 		{
 			"name": "coKreat Form API for Framework Categories",
 			"item": [
-				{
-					"name": "FORM Read Copy",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Cookie",
-								"value": "connect.sid=s%3A_jHfa-gCjdk6eODS_7s4X_TEAy7GALEs.%2FEhXkBp%2FHcZH2NagAZa%2FBZn7F%2BJYEUVcMYxTHUtjQ2o"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"request\": {\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Channel ID\n        \"operation\": \"read\"\n    }\n}"
-						},
-						"url": {
-							"raw": "{{host}}/api/data/v1/form/read",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"data",
-								"v1",
-								"form",
-								"read"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "Category Form Read API",
 					"request": {
@@ -399,7 +365,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
+							"raw": "{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"detailsVisible\": true,\n                    \"filtersVisible\": true,\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n                {\n                    \"code\": \"commercialcrops\",\n                    \"name\": \"commercial crops\",\n                    \"label\": \"commercial crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"commercial crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                },\n                {\n                    \"code\": \"livestockmanagement\",\n                    \"name\": \"live stock management\",\n                    \"label\": \"livestockmanagement\",\n                    \"default\": \"\",\n                    \"depends\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"list\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"\",\n                    \"placeholder\": \"Select stock\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1\"\n                    }\n                }\n            ]\n        }\n    }\n}"
 						},
 						"url": {
 							"raw": "{{host}}/content/program/v1/form/create",
@@ -659,7 +625,7 @@
 					"response": []
 				}
 			],
-			"description": "in this collection we have form read, create and update API's\n\nWe need to Have these API's to show the categories in the SB forms and other places.\n\nRead API:\n\n``` json\n{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\", \n        \"rootOrgId\": \"0138934136407244800\" // Channel id\n    }\n}\n\n ```\n\nWe need to pass the root ord id (channel id) to get the category objects\n\nCreate / Update API:\n\nIn this we add properties and all the other validation similar as we add for SB forms\n\n``` json\n{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n]\n}\n}\n}\n\n ```"
+			"description": "in this collection we have form read, create and update API's\n\nWe need to Have these API's to show the categories in the SB forms and other places.\n\nRead API:\n\n``` json\n{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\", \n        \"rootOrgId\": \"0138934136407244800\" // Channel id\n    }\n}\n\n ```\n\nWe need to pass the root ord id (channel id) to get the category objects\n\nCreate / Update API:\n\nIn this we add properties and all the other validation similar as we add for SB forms\n\n``` json\n{\n    \"request\": {\n        \"objectype\": \"*\",\n        \"operation\": \"read\",\n        \"context\": \"framework\",\n        \"context_type\": \"*\",\n        \"channel\": \"\", // Chanel Id\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"create\",\n            \"properties\": [\n                {\n                    \"code\": \"foodcrops\",\n                    \"name\": \"food crops\",\n                    \"label\": \"food crops\",\n                    \"default\": \"\",\n                    \"visible\": true,\n                    \"dataType\": \"text\",\n                    \"editable\": true,\n                    \"required\": true,\n                    \"inputType\": \"select\",\n                    \"description\": \"food crops\",\n                    \"placeholder\": \"Select Crop\",\n                    \"detailsVisible\": true,\n                    \"filtersVisible\": true,\n                    \"renderingHints\": {\n                        \"class\": \"sb-g-col-lg-1 required\"\n                    },\n                    \"validations\": [\n                        {\n                            \"type\": \"maxLength\",\n                            \"value\": \"120\",\n                            \"message\": \"Input is Exceeded\"\n                        },\n                        {\n                            \"type\": \"required\",\n                            \"message\": \"Title is required\"\n                        }\n                    ]\n                },\n]\n}\n}\n}\n\n ```\n\nWe need to add the Categories in the <u>\"properties: \"</u>\n\nIn the above Json Objcect if we need to add one more category then we will add it in \"Properties\" array only.\n\nHow to configure properties:  \nSuppose your framework supports 5 categories (cat1, cat2, cat3, cat4 and cat5) but in creation portal you need to show only 3 of them in all the places for eg (cat2, cat4 and cat5)  \nThen you need to add 3 only categories in the properties.\n\nAlso if you need to have all five properties but you dont want to show them in SB forms, then you can make \"Visible\" as false.\n\nIn case you want to hide some category in details page then you need to make \"detailsVisible\" as true and for filters we have \"filtersVisible\" too show and hide any category."
 		},
 		{
 			"name": "coKreat Filter Form API",
