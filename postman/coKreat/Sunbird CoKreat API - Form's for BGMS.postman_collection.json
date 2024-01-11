@@ -111,6 +111,57 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Workspace Category Show/ Hide Create API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkOTY3NzRjYzJkNWU0ZWUxYmQwNzQ4Y2RiOWQ2Mzg0OSJ9.n4hXxKxl_698yeZPSWhXeGvMOb4esfgPadIZe8jZ0Z4",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-authenticated-user-token",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1WXhXdE4tZzRfMld5MG5PS1ZoaE5hU0gtM2lSSjdXU25ibFlwVVU0TFRrIn0.eyJqdGkiOiIwNzk3NDcxZS04ZmYwLTQ5NjctYjNlYy03MWMwY2ZjYmMzMDIiLCJleHAiOjE1NzUzNzgzMTEsIm5iZiI6MCwiaWF0IjoxNTc1MzYzOTExLCJpc3MiOiJodHRwczovL2Rldi5zdW5iaXJkZWQub3JnL2F1dGgvcmVhbG1zL3N1bmJpcmQiLCJhdWQiOiJhZG1pbi1jbGkiLCJzdWIiOiJmOjVhOGEzZjJiLTM0MDktNDJlMC05MDAxLWY5MTNiYzBmZGUzMTo5NWU0OTQyZC1jYmU4LTQ3N2QtYWViZC1hZDhlNmRlNGJmYzgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJhdXRoX3RpbWUiOjAsInNlc3Npb25fc3RhdGUiOiJjN2NkMmRmMi0zMGJhLTRjNjUtYWNhNi1jMmJkMGMxYzI5NWYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnt9LCJuYW1lIjoiUmV2aWV3ZXIgVXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6Im50cHRlc3QxMDMiLCJnaXZlbl9uYW1lIjoiUmV2aWV3ZXIiLCJmYW1pbHlfbmFtZSI6IlVzZXIiLCJlbWFpbCI6InVzKioqKioqKipAdGVzdHNzLmNvbSJ9.MP0ufWdddyvYXw_HZRzGmZX-ClzUOfXeMcZW-558XO5Z4xCsDWsLGGYKDpCqhqgNBLPYgs7oiPf0rbhenSgsLSq7M5ZZ30elSrGl3zHvUh8E-bVsbDHzUwhx95czEd3kGaIBTIjQ1o9BmF54CKdwtIuxA-447dJsHtXlFaVATNI_yS-bQSBjKm86HaDF58-zKeaTZ__-Wi8E3vChBBIujsNNIokNv2LxkdlLvSKXo8XVNuIj94H_yryTUpfAfX60qALsqF7Yk8sWq8lEud72B_hJcPzqFwbT0a_gThRGctnPk-yJWN6a6oY4yUonLtUjTJROCyYILCwAz9bItp6NRw",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "connect.sid=s%3AaudonhNhHwoZ2VTzA4ownKoyGdlI1zQ3.2%2FYaQyGHfWSwB%2Bf0t5u9xOQFO1sHb0kpW5T7u2rqnpE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"request\": {\n        \"type\": \"workspace\",\n        \"subType\": \"categories\",\n        \"action\": \"get\",\n        \"rootOrgId\": \"\", // Channel ID\n        \"data\": {\n            \"templateName\": \"defaultTemplate\",\n            \"action\": \"display\",\n            \"fields\": [\n                {\n                    \"code\": \"book\",\n                    \"name\": \"Book\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"course\",\n                    \"name\": \"Course\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"resource\",\n                    \"name\": \"Resource\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"collection\",\n                    \"name\": \"Collection\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"lessonPlan\",\n                    \"name\": \"Lesson Plan\",\n                    \"visible\": true\n                },\n                {\n                    \"code\": \"contentupload\",\n                    \"name\": \"Upload Content\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"contentuploadlarge\",\n                    \"name\": \"Upload Large Videos(>50MB)\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"assessment\",\n                    \"name\": \"Cource Assesment\",\n                    \"visible\": false\n                },\n                {\n                    \"code\": \"questionsets\",\n                    \"name\": \"Questionsets\",\n                    \"visible\": true\n                }\n            ]\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/data/v1/form/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"data",
+								"v1",
+								"form",
+								"create"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"description": "These API's are to enable and disbale the primary category tiles in workspace, In case you have to show or hide any categories the \"visible\" key needs to be updated.\n\n``` json\n{\n   \"code\": \"book\",\n   \"name\": \"Book\",\n   \"visible\": true\n},\n\n ```\n\nSupposw you need to show the Book Lable, then you need to make \"visible\" as true and to hide it we need to mark \"visible\" as false."
